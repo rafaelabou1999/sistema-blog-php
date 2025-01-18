@@ -30,6 +30,44 @@ header{
    padding-top: 2%;
 }
 
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10%;
+}
+
+.user_info{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.username{
+    background-color: #d6565fef;
+    border-radius: 6px;
+    color:rgb(243, 243, 243);
+    width:53px;
+    height:24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15.5px;
+    letter-spacing: 0.09em;
+}
+
+.logout{
+    font-size: 13px;
+    color:#242122;
+    text-decoration: underline;
+    padding-top: 8%;
+}
+.img_user{
+    width:45px;
+    border-radius: 50%;
+    filter: brightness(96%);
+    border: 2px solid rgb(25, 204, 25);
+}
 .logo a {
     color: #312c2c !important;
     font-weight: 600;

@@ -6,18 +6,14 @@ $isHome = false;
 
 if(isset($_GET['title'])){
     $title = $_GET['title'];
-    $first_posts = [
+    $posts = [
         "Ainda estou aqui" => "../../public/assets/ainda-estou-aqui.webp",
         "Wicked" => "../../public/assets/wicked.jpeg",
         "Duna 2" => "../../public/assets/duna-2.png",
+        "A subtância" => "../../public/assets/substancia.jpg",
     ]; 
 
-    $second_posts = [
-        "A subtância" => "../../public/assets/substancia.jpg",
-    ];
-
-    if(array_key_exists($title, $first_posts)) $image = $first_posts[$title];  
-    if(array_key_exists($title, $second_posts)) $image = $second_posts[$title];  
+    if(array_key_exists($title, $posts)) $image = $posts[$title];  
 } 
 
 $sinopse = [
@@ -25,9 +21,11 @@ $sinopse = [
     "Wicked" => "Wicked conta a história não autorizada de Elphaba, a Bruxa Malvada do Oeste, e Glinda, a Bruxa Boa, antes de se tornarem rivais. Na Universidade de Shiz, as duas bruxas estudantes inicialmente se odeiam, mas acabam formando uma improvável amizade. Elphaba, diferente e incompreendida, possui poderes mágicos incomuns, enquanto Glinda é popular e adorada por todos.\nA trama se desenrola enquanto as duas enfrentam desafios e descobrem mais sobre si mesmas e o mundo ao seu redor. Elphaba se envolve em uma luta contra a injustiça e a opressão, defendendo os direitos dos animais e lutando contra a corrupção do governo. Enquanto isso, Glinda aprende a ser mais empática e a entender as dificuldades enfrentadas por aqueles que são diferentes.\nA amizade entre Elphaba e Glinda é testada por diversos obstáculos, incluindo a crescente popularidade de Elphaba como uma figura revolucionária e as exigências políticas que as colocam em lados opostos. A história explora temas como preconceito, amor, amizade, coragem e a importância de defender o que se acredita, mesmo diante da adversidade.\nWicked é um musical cativante com músicas memoráveis e uma mensagem poderosa sobre a importância da aceitação e da compreensão. A história subverte a narrativa tradicional de \"O Mágico de Oz\", oferecendo uma perspectiva única e fascinante sobre os personagens e o mundo mágico que eles habitam.",
     "Duna 2" => "Paul Atreides, agora conhecido como o Muad'Dib, lidera uma rebelião contra o Império Harkonnen, buscando vingança pela destruição de sua família e casa. Transformado pelo Deserto de Arrakis e abençoado pela profecia, Paul emerge como um líder espiritual e militar, unindo os Fremen em sua luta pela liberdade. No entanto, o poder absoluto corrompe, e Paul começa a abraçar um destino sombrio, predestinado a se tornar o tirano galáctico que ele jurou destruir.\nAcompanhamos a ascensão de Paul ao poder, enquanto ele enfrenta desafios internos e externos. Sua visão do futuro, baseada nas visões de sua Bene Gesserit, torna-se cada vez mais opressora, ameaçando a liberdade que tanto lutou para conquistar. A relação entre Paul e sua amada Chani é testada pelos eventos traumáticos e pelo peso da profecia.\nDuna: Parte Dois explora temas como poder, destino, liberdade e o preço da liderança. O filme mergulha ainda mais na mitologia e misticismo do universo criado por Frank Herbert, apresentando novas criaturas, tecnologias e intrigas políticas.",
     "A substância" => "\"A Substância\" é um thriller de ficção científica que gira em torno de uma descoberta científica revolucionária. Em um futuro não muito distante, um grupo de cientistas descobre uma substância misteriosa capaz de alterar a realidade e os pensamentos das pessoas. Inicialmente, a substância é vista como a solução para muitos dos problemas da humanidade, desde doenças incuráveis até questões psicológicas. No entanto, à medida que os testes avançam, os cientistas percebem que a substância tem efeitos colaterais perigosos e pode ser usada como uma arma poderosa.\nO protagonista, Dr. Júlio Mendes, é um dos principais pesquisadores envolvidos no projeto e enfrenta um dilema ético. Quando ele descobre que a substância está sendo usada para manipular as mentes das pessoas para fins políticos e militares, ele decide expor a verdade ao mundo. Mas essa decisão coloca sua vida e a vida de seus entes queridos em perigo, e ele precisa encontrar uma maneira de desmascarar os responsáveis sem se tornar uma vítima.\nEnquanto Dr. Mendes luta para revelar a verdade, ele encontra aliados inesperados e descobre segredos sombrios sobre a origem da substância. A trama se desenrola em um ritmo acelerado, com reviravoltas e momentos de alta tensão, levando o público a questionar a linha tênue entre ciência e moralidade. \"A Substância\" é uma obra instigante que aborda questões profundas sobre o poder, a ética e as consequências das descobertas científicas."
-]
-?>
 
+]
+
+
+?>
 
 <?php
     $path_to_display = "../../public/index.php";
@@ -44,7 +42,7 @@ $sinopse = [
 </head>
 <body>
 <?php if($title):?>
-    <?php if((array_key_exists($title, $first_posts) && isset($first_posts[$title])) || (array_key_exists($title, $first_posts) && isset($first_posts[$title])) ):?>
+    <?php if(array_key_exists($title,$posts) && isset($posts[$title])):?>
         <?php include __DIR__ . "/../inc/Header.inc.php"?>
         <div class="has_title">
             <div class="path_display"><a href="../../public/index.php">Home</a> 🢚 <span>Blog</span></div>
@@ -58,6 +56,7 @@ $sinopse = [
             <!--<div class="star">4.9</div>!-->
             <div class="line"></div>
             <div class="sinopse_box">
+        
                 <?php   foreach ($sinopse AS $title_s => $text){
                             if($title_s === $title){
                                 $text_array = explode("\n", $text);

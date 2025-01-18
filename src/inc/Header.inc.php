@@ -9,5 +9,11 @@
 <body>
 <header>
     <h4 class="logo"><a href="<?= $is_blog ? "../../public/index.php" : "./index.php" ?>">CineLuzes</a></h4>
-    <button class="btn_header"><a class="btn_header_text" href="../Views/new_post.php">USER</a></button>
+    <div class="user">
+        <img class="img_user" src="<?= $is_blog ? "../../public/assets/profile-user.jpeg" : "./assets/profile-user.jpeg" ?>"/>
+        <div class="user_info">
+            <div class="username">User</div>
+            <div class="logout">Logout</div>
+        </div>  
+    </div>
 </header>
