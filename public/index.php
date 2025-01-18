@@ -1,4 +1,4 @@
-<?php include __DIR__ . "/../src/inc/Header.inc.php"?>
+<?php require_once __DIR__ . "/../src/inc/Header.inc.php"?>
    
     <?php include __DIR__ . "/../src/Views/old_post.php"?>
     <div class="pages">
