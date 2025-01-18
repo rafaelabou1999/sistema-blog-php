@@ -1,0 +1,143 @@
+body{
+    height:125vh;
+}
+
+.post_error{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 22px;
+}
+
+.has_title{
+    position: absolute;
+    left: 43%;
+    transform: translateX(-50%);
+    width:400px;
+    height: auto;
+}
+
+.blog_banner{
+    width:33vw;
+    aspect-ratio: 4 / 2;
+    object-fit: cover;
+}
+
+.author_box{
+    display: flex;
+    flex-direction: row;
+    gap:3.3%;
+    width:68%;
+    align-items: center;
+    margin-bottom: 9%;
+    background-color: #ebeaea9f;
+    padding: 2%;
+    border:1px solid #d6d6d6;
+}
+
+.author{
+    width:50px;
+    height:50px;
+    object-fit: cover;
+    filter: saturate(30%);
+}
+.path_display{
+    margin-bottom: 2.5%;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.path_display a:visited{
+    color:rgba(0, 0, 0, 0.884);
+}
+
+.path_display span{
+    background-color: #494949fd;
+    color: #f0f0f0;
+    padding: 1% 2%;
+}
+
+.blog_title{
+    font-size: 32px;
+    margin-top: 8%;
+    margin-bottom: 2.5%;
+    font-weight: 600;
+    font-family:sans-serif;
+}
+
+.sinopse{
+    width:33vw;
+    font-size: 17.5px;
+    line-height: 1.3;
+}
+
+.img_banner{
+    position: relative;
+    margin-bottom: 6%;
+}
+
+figcaption{
+    color:#646363;
+    margin-top: 1.3%;
+}
+.star{
+    position: absolute;
+    top:17%;
+    left:3%;
+    background-color: #0f0f0f;
+    color:#eeeeee;
+    font-weight: 600;
+    padding: 3% 2%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 1px 1px 1px #000;
+}
+
+.input_blog{
+    display: flex;
+    flex-direction: column;
+    gap:2%;
+    margin: 6% auto;
+    
+}
+.comment{
+    width:33vw;
+    height:35px;
+    margin-bottom: 4%;
+    background-color: transparent;
+    border: 1px solid #0f0f0f;
+}
+
+.comment_title{
+    margin-bottom: 3%;
+    font-weight: 100;
+}
+
+.comment_text{
+    margin-top:3%;
+    margin-bottom: 20%;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .has_title{
+        left: 35% !important;
+        width:62.4%;
+    }
+
+    .blog_banner{
+        aspect-ratio: 4 / 2.5;
+    }  
+
+    .blog_banner, .sinopse, .comment{
+        width:90vw;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1500px) {
+    .has_title{
+        left: 36% !important;
+    }
+    .blog_banner, .sinopse, .comment{
+        width:55vw;
+    }  
+}
