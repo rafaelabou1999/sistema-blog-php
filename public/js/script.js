@@ -11,10 +11,14 @@ page_number.forEach((number) => {
             console.log('primeira')
             first_page.style.display = 'block';
             second_page.style.display = 'none';
+            first_number.style.backgroundColor = "#000000";
+            second_number.style.backgroundColor = "#252424c9";
         } else if (number.classList.contains('second_page')){
             console.log("seconda")
             second_page.style.display = 'block';
             first_page.style.display = 'none';
+            second_number.style.backgroundColor = "#000000";
+            first_number.style.backgroundColor = "#252424c9";
         }
     });
 })
