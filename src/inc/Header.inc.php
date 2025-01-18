@@ -8,6 +8,6 @@
 </head>
 <body>
 <header>
-    <h4 class="logo"><a href="./index.php">CineLuzes</a></h4>
+    <h4 class="logo"><a href="<?= $is_blog ? "../../public/index.php" : "./index.php" ?>">CineLuzes</a></h4>
     <button class="btn_header"><a class="btn_header_text" href="../Views/new_post.php">USER</a></button>
 </header>

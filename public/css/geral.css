@@ -14,6 +14,7 @@
 
 body{
     background-color: #f2f5f8;
+    max-height: auto;
 }
 a{
     text-decoration: none;
@@ -146,31 +147,30 @@ label{
 .pages {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     font-size: 22px;
-    position: absolute;
-    bottom:-18%;
-    left: 48.5%;
-    transform: translateX(-50%);
+    margin-top: 49%;
+    margin-bottom: 5%;
 }
 
 .page{
-    margin-left: 35%;
+    margin-left: 1%;
     color:rgb(226, 225, 225);
     text-align: center;
     background-color:#252424c9;
-    padding: 20%;
+    padding: .3%;
 }
 
 .page:first-of-type{
     background-color:#000000;
 }
+
 footer{
-    position: absolute;
-    left:50%;
-    bottom:-30%;
-    transform: translateX(-50%);
     letter-spacing: 0.02em;
     color:#1b1b1be3;
     padding: 1%;
+    text-align: center;
+    width:100%;
 }
 
