@@ -26,12 +26,12 @@ body{
     position: absolute;
     left: 43%;
     transform: translateX(-50%);
-    width:400px;
+    width:38vw;
     height: auto;
 }
 
 .blog_banner{
-    width:33vw;
+    width:35vw;
     aspect-ratio: 4 / 2;
     object-fit: cover;
 }
@@ -80,7 +80,7 @@ body{
 }
 
 .sinopse{
-    width:33vw;
+    width:35vw;
     font-size: 17.5px;
     line-height: 1.3;
 }

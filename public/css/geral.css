@@ -1,6 +1,6 @@
 :root{
     --bg-dark: #202020;
-    --header-color: #e7e5e5;
+    --header-color: #ffffff;
     --font-light:300;
     --font-verdana:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -13,7 +13,7 @@
 }
 
 body{
-    background-color: #f2f5f8;
+    background-color: #ffffff;
     max-height: auto;
 }
 a{
