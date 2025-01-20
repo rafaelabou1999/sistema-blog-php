@@ -24,7 +24,7 @@ body{
 }
 .has_title{
     position: absolute;
-    left: 43%;
+    left: 50%;
     transform: translateX(-50%);
     width:38vw;
     height: auto;
@@ -110,7 +110,8 @@ figcaption{
     display: flex;
     flex-direction: column;
     gap:2%;
-    margin: 6% auto;
+    margin: 3% auto;
+    margin-left:0%;
     
 }
 .comment{

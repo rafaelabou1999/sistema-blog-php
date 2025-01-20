@@ -1,5 +1,5 @@
 :root{
-    --bg-dark: #202020;
+    --bg-dark: #201f1f;
     --header-color: #ffffff;
     --font-light:300;
     --font-verdana:Verdana, Geneva, Tahoma, sans-serif;
@@ -13,7 +13,7 @@
 }
 
 body{
-    background-color: #ffffff;
+    background-color: #eeeaea;
     max-height: auto;
 }
 a{
@@ -107,7 +107,7 @@ button{
     display: flex;
     flex-direction: row;
     gap:2%;
-    background-color: #fcfbfb;
+    background-color: #f1f1f1;
     border:1px solid #e0dcdce5;
 }
 
