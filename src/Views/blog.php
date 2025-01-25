@@ -19,7 +19,7 @@ $isHome = false;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../public/css/blog.css" rel="stylesheet">
     <link href="../../public/css/geral.css" rel="stylesheet">
-    <title><?= e($title) ?></title>
+    <title><?= e($_SESSION['title']) ?></title>
 </head>
 <body>
 <?php
@@ -32,6 +32,8 @@ foreach ($posts as $post) {
         switch ($_SESSION['title']) {
             case $post['title']:
                 include __DIR__ . "/../inc/Header.inc.php"; ?>
+                <div class="box">
+             
                 <div class="has_title">
                     <div class="path_display"><a href="../../public/index.php">Home</a> 🢚 <span>Blog</span></div>
                     <div class="img_banner">
@@ -61,6 +63,15 @@ foreach ($posts as $post) {
                         </div>
                     </div>
                   
+                </div>
+                <div class="subscribe">
+                    <h4>Registre <span>Seu e-mail</span></h4>
+                    <form>
+                        <input type="email" placeholder="Digite seu email aqui"/>
+                        <input type="submit" value="Inscreva-se"/>
+                    </form>
+                </div>
+                       
                 </div>
                 <?php
                 break;

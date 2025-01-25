@@ -2,6 +2,7 @@
 $is_views = true;
 $is_blog = true;
 session_start();
+
 include __DIR__ . '/../inc/functions.inc.php';
 include __DIR__ . '/../inc/posts_info.inc.php';
 include __DIR__ . '/../inc/db-connect.inc.php';

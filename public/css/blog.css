@@ -23,29 +23,26 @@ body{
     font-size: 15px;
 }
 .has_title{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    
     width:35vw;
     height: auto;
 }
 
 .title_box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
 }
 
 .watchlist_btn{
+    position: absolute;
+    bottom:-60%;
+    right:1%;
     width:4.3vw;
     height:36px;
-    background-color: #3d3d3d;
-    border: none;
+    background-color: #e4e4e4;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    color:#e4e3e3;
-    box-shadow: 1px 1px 1px #e4e3e3;
-    filter:saturate(97%);
+    color:#3d3c3c;
+    box-shadow: 1px 1px 1px #636060;
     margin-top: 5%;
     font-weight: 600;
     font-size: 16px;
@@ -60,7 +57,8 @@ body{
 }
 
 .watchlist_btn:hover{
-    background-color: #cc8888;
+    background-color: #e0a8a8;
+    color:#ececec; 
 
 }
 
@@ -91,18 +89,21 @@ body{
 .path_display{
     margin-bottom: 2.5%;
     font-size: 17px;
-    text-transform: uppercase;
     letter-spacing: .1em;
 }
 
 .path_display a:visited{
     color:rgba(0, 0, 0, 0.884);
+    text-decoration: underline;
 }
 
+.path_display a{
+    text-decoration: underline;
+
+}
 .path_display span{
-    background-color: #494949fd;
-    color: #f0f0f0;
-    padding: 1% 2%;
+    color: #000000;
+    text-decoration: underline;
 }
 
 .blog_title{
@@ -149,8 +150,31 @@ figcaption{
     
 }
 
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    gap: 5%;
+}
 
+.subscribe{
+    margin-top: 10%;
+    height:15vh;
+    width:250px;
+    background-color: #cacaca;
+    color:#413f3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.subscribe h4{
+    font-size: 21px;
+}
+.subscribe input{
+    width:85%;
+}
 @media screen and (max-width:600px) {
     .has_title{
         left: 35% !important;
