@@ -30,6 +30,10 @@ header{
    padding-top: 2%;
 }
 
+.list_link{
+    color:#181717;
+}
+
 .user{
     display: flex;
     flex-direction: row;

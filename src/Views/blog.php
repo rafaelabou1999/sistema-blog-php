@@ -1,10 +1,13 @@
 <?php
 include_once __DIR__ . '/../inc/functions.inc.php';
 
-$is_blog = true;
+$is_views = true;
 include __DIR__ . '/../inc/posts_info.inc.php';
 
-$title = $_GET['title'];
+session_start();
+$_SESSION['title'] = $_GET['title'];
+
+$is_blog = true;
 $isHome = false; 
 
 ?>
@@ -24,15 +27,22 @@ $title = trim($_GET['title']);
 $found = false;
 
 foreach ($posts as $post) {
-    if (isset($post['title']) && trim($post['title']) === $title) {
+    if (isset($post['title']) && trim($post['title']) === $_SESSION['title']) {
         $found = true;
-        switch ($title) {
+        switch ($_SESSION['title']) {
             case $post['title']:
                 include __DIR__ . "/../inc/Header.inc.php"; ?>
                 <div class="has_title">
                     <div class="path_display"><a href="../../public/index.php">Home</a> 🢚 <span>Blog</span></div>
                     <div class="img_banner">
-                        <h1 class="blog_title"><?= e($post['title']) ?></h1>
+                        <div class="title_box">
+                            <h1 class="blog_title"><?= e($post['title']) ?></h1>
+                            <form action="list.php" method="POST">
+                                <input type="hidden" name="title" value="<?= $_SESSION['title']; ?>" />
+                                <input type="submit" class="watchlist_btn" value="Salvar"/>
+                            </form>
+                        </div>
+                
                         <figure>
                             <img class="blog_banner" src="<?= e($post['image']);?>"/>
                             <figcaption>| Image by xyz</figcaption>
@@ -50,15 +60,7 @@ foreach ($posts as $post) {
                             <p>Jan 18, 2025</p>
                         </div>
                     </div>
-                    <form action="blog.php">
-                        <div class="input_blog">
-                            <label class="comment_title">Comentarios</label>
-                            <input type="text" name="comment" class="comment">
-                        </div>
-                    </form>
-                    <div class="comment_section">
-                        <h5 class="comment_text">Filme maravilhoso!!!!!! Vale a pena assistir</h5>
-                    </div>
+                  
                 </div>
                 <?php
                 break;

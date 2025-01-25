@@ -2,6 +2,7 @@
 include_once __DIR__ . '/../inc/functions.inc.php';
 include __DIR__ . '/../inc/posts_info.inc.php';
 
+$is_views = false;
 $is_blog = false;
 $posts_first = array_slice($posts, 0, -1, true);
 $posts_second = array_slice($posts, -1, 1, true);

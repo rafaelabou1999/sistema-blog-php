@@ -1,0 +1,26 @@
+
+h3{
+    text-align: center;
+    padding: 4%;
+}
+
+.list_box{
+    height:88vh;
+}
+
+.movies{
+    width:240px;
+    height:170px;
+    object-fit: cover;
+   display: flex;
+   flex-direction: row;
+   margin-left: 15%;
+   gap:3%; 
+}
+
+.each_movie{
+    border:1px solid #000;
+    width:250px;
+    height:280px;
+    background-color: aquamarine;
+}
