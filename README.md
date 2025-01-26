@@ -1,4 +1,6 @@
-# Sistema de Blog 
+# CineLuzes
+Este projeto simula um blog de filmes onde os usuários podem ver a sinopse dos filmes e adicioná-los à sua lista pessoal de favoritos 
+
 ### Linguagens e Ferramentas
 - PHP
 - MySQL
