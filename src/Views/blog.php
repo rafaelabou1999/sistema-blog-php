@@ -63,14 +63,6 @@ foreach ($posts as $post) {
                     </div>
                   
                 </div>
-               <!--- <div class="subscribe">
-                    <h4>Registre <span>Seu e-mail</span></h4>
-                    <form>
-                        <input type="email" placeholder="Digite seu email aqui"/>
-                        <input class="email_btn" type="submit" value="Inscreva-se"/>
-                    </form>
-                </div>
-                     !--->  
                 </div>
                 <?php
                 break;
@@ -89,6 +81,8 @@ if (!$found) {
     <?php
 }
 ?>
+
+
 </body>
 
 

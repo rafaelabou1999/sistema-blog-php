@@ -38,10 +38,8 @@ body{
     right:1%;
     width:4.3vw;
     height:36px;
-    background-color: #e4e4e4;
     border: 1px solid #ccc;
     border-radius: 10px;
-    color:#3d3c3c;
     box-shadow: 1px 1px 1px #636060;
     margin-top: 5%;
     font-weight: 600;
@@ -55,6 +53,16 @@ body{
     justify-content: center;
     align-items: center;
     opacity: 1;
+}
+
+.to_click{
+    background-color: #e4e4e4;
+    color:#3d3c3c;
+}
+
+.clicked{
+    background-color: #3d3c3c !important;
+    color:#e4e4e4;
 }
 
 .watchlist_btn:hover{
@@ -121,26 +129,6 @@ figcaption{
     color:#646363;
     margin-top: 1.3%;
 }
-.star{
-    position: absolute;
-    top:17%;
-    left:3%;
-    background-color: #0f0f0f;
-    color:#eeeeee;
-    font-weight: 600;
-    padding: 3% 2%;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 1px 1px 1px #000;
-}
-
-.input_blog{
-    display: flex;
-    flex-direction: column;
-    gap:2%;
-    margin: 3% auto;
-    margin-left:0%;
-    
-}
 
 .box{
     display: flex;
@@ -149,51 +137,21 @@ figcaption{
     gap: 5%;
 }
 
-.subscribe{
-    margin-top: 10%;
-    height:19vh;
-    width:270px;
-    background-color: #1f1e1ef5;
-    color:#e7e7e7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-}
-
-.subscribe h4{
-    font-size: 18px;
-    margin-bottom: 5%;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-}
-
-.subscribe span{
-    font-weight: 600;
-    color:#fcfdff;
-}
-.subscribe input{
-    width:130%;
-    height: 35px;
-    padding: 3%;
-    margin-bottom: 4%;
-}
-
-.email_btn{
-    background-color: #4faaff;
-    border:none;
-    color:#ffffff;
-    text-transform: uppercase;
-    font-weight: 600 !important;
-    box-shadow: 1px 1px 1px #7ca7ff;
-    font-size: 14.5px;
-}
-
 @media screen and (max-width:600px) {
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content:start ;
+        gap: 5%;
+        padding: 3%;
+    }
+        
+    .author_box{
+        width:66%;
+        font-size: 14.8px;
+    }
+
     .has_title{
-        left: 35% !important;
         width:62.4%;
     }
 
@@ -204,12 +162,33 @@ figcaption{
     .blog_banner, .sinopse{
         width:90vw;
     }
+
+    .watchlist_btn{
+        bottom:-90%;
+        right:-55%;
+        width:15vw;
+    }
 }
 @media screen and (min-width:600px) and (max-width:1500px) {
-    .has_title{
-        left: 36% !important;
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        margin-left: -17%;
     }
+
     .blog_banner, .sinopse{
         width:55vw;
     }  
+
+    .watchlist_btn{
+        bottom:-90%;
+        right:-55%;
+        width:8vw;
+    }
+
+    .author_box{
+        width:55%;
+        font-size: 14.8px;
+    }
 }
