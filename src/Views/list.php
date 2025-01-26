@@ -42,7 +42,7 @@ session_destroy();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../public/css/geral.css" rel="stylesheet"/>
     <link href="../../public/css/list.css" rel="stylesheet"/>
-    <title>Document</title>
+    <title>Minha Lista</title>
 </head>
 <body>
     
