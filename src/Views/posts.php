@@ -21,7 +21,6 @@ $posts_second = array_slice($posts, -1, 1, true);
                 <img class="post_card_img" src="<?= e($post['image']);?>"/>
                 <div class="right_part_card">
                     <h3 class="post_card_title"><?= e($post['title']); ?></h3>  
-                    <h4 class="genero">★★★★★</h4> 
                     <p><?php echo substr($post['sinopse'], 0 ,250);?>...</p>     
                     <button class="post_card_btn" onclick="window.location.href='<?= $url ?>'">Leia mais</button>
                 </div>
@@ -41,7 +40,6 @@ $posts_second = array_slice($posts, -1, 1, true);
                 <img class="post_card_img" src="<?= e($post['image']);?>"/>
                 <div class="right_part_card">
                 <h3 class="post_card_title"><?= e($post['title']); ?></h3>  
-                <h4 class="genero">★★★★★</h4> 
                 <p><?php echo substr($post['sinopse'], 0 ,250);?>...</p>     
                 <button class="post_card_btn" onclick="window.location.href='<?= $url ?>'">Leia mais</button>
              </div>

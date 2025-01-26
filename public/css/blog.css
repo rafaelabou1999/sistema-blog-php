@@ -54,12 +54,12 @@ body{
     gap:3.5%;
     justify-content: center;
     align-items: center;
+    opacity: 1;
 }
 
 .watchlist_btn:hover{
-    background-color: #e0a8a8;
-    color:#ececec; 
-
+    opacity: .95;
+    color:#0f0f0f;
 }
 
 .blog_banner{
@@ -69,25 +69,17 @@ body{
 }
 
 .author_box{
-    display: flex;
-    flex-direction: row;
-    gap:3.3%;
-    width:68%;
+    width:22%;
     align-items: center;
     margin-bottom: 9%;
-    background-color: #ebeaea9f;
-    padding: 2%;
-    border:1px solid #d6d6d6;
+    border-top: 1px solid #302f2f8a;
+    padding-top: 2%;
+    color:#1d1d1d;
+    font-size: 14.5px;
 }
 
-.author{
-    width:50px;
-    height:50px;
-    object-fit: cover;
-    filter: saturate(30%);
-}
 .path_display{
-    margin-bottom: 2.5%;
+    margin-bottom: 0%;
     font-size: 17px;
     letter-spacing: .1em;
 }
@@ -108,7 +100,7 @@ body{
 
 .blog_title{
     font-size: 32px;
-    margin-top: 8%;
+    margin-top: 2.5%;
     margin-bottom: 2.5%;
     font-weight: 600;
     font-family:sans-serif;
@@ -159,22 +151,46 @@ figcaption{
 
 .subscribe{
     margin-top: 10%;
-    height:15vh;
-    width:250px;
-    background-color: #cacaca;
-    color:#413f3f;
+    height:19vh;
+    width:270px;
+    background-color: #1f1e1ef5;
+    color:#e7e7e7;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 3px;
 }
 
 .subscribe h4{
-    font-size: 21px;
+    font-size: 18px;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.subscribe span{
+    font-weight: 600;
+    color:#fcfdff;
 }
 .subscribe input{
-    width:85%;
+    width:130%;
+    height: 35px;
+    padding: 3%;
+    margin-bottom: 4%;
 }
+
+.email_btn{
+    background-color: #4faaff;
+    border:none;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    box-shadow: 1px 1px 1px #7ca7ff;
+    font-size: 14.5px;
+}
+
 @media screen and (max-width:600px) {
     .has_title{
         left: 35% !important;

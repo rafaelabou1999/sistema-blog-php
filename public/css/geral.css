@@ -112,8 +112,8 @@ button{
     display: flex;
     flex-direction: row;
     gap:2%;
-    background-color: #fdfdfd;
-    border:1px solid #e0dcdce5;
+    background-color: #ffffff;
+    border:1px solid #272c302c;
     box-shadow: .2px .2px .2px #313131;
 }
 
@@ -129,22 +129,14 @@ button{
 }
 
 .post_card_title{
-    font-weight: var(--font-light);
+    font-weight: 600;
     margin-top: .1%;
+    font-size: 22px;
     width:115%;
+    color: #131212;
+    letter-spacing: 0.02em;
 }
 
-.genero{
-    margin-top: .3%;
-    font-weight: 400;
-    background-color: #202020d2;
-    color: #e7e5e5;
-    font-size: 15px;
-    text-align: center;
-    padding: .2%;
-    letter-spacing: 0.045em;
-    width:60px;
-}
 .post p{
     margin-top: 3.5%;
     width:92%;
@@ -155,16 +147,16 @@ button{
     font-size: 12.4px;
     position: absolute;
     letter-spacing: 0.05em;
-    bottom: 0%;
+    bottom: 7%;
     right:5%;
     width:102px;
     height:32px;
-    border-radius: 3px 3px 0px 0px;
-    filter: grayscale(40%);
-    background-color: #25255fe5;
+    border:none;
+    box-shadow: none !important;
+    background-color: #041f3ac9;
     font-weight: 600 !important;
     text-transform: uppercase;
-    color:#fff;
+    color:#f8f6f6;
     font-weight: 400;
     cursor: pointer;
 }

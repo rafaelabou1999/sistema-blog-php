@@ -56,22 +56,20 @@ foreach ($posts as $post) {
                         <p class='sinopse'><?php echo join("</p><br><p class='sinopse'>", $text_array)?></p><br>
                     </div>
                     <div class="author_box">
-                        <img class="author" src="../../public/assets/profile-user.jpeg"/>
                         <div>
                             <h4>Texto gerado por IA</h4>
-                            <p>Jan 18, 2025</p>
                         </div>
                     </div>
                   
                 </div>
-                <div class="subscribe">
+               <!--- <div class="subscribe">
                     <h4>Registre <span>Seu e-mail</span></h4>
                     <form>
                         <input type="email" placeholder="Digite seu email aqui"/>
-                        <input type="submit" value="Inscreva-se"/>
+                        <input class="email_btn" type="submit" value="Inscreva-se"/>
                     </form>
                 </div>
-                       
+                     !--->  
                 </div>
                 <?php
                 break;
