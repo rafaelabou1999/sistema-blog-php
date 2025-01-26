@@ -3,28 +3,49 @@
 - HTML, CSS
 - JavaScript
 - PHP
-- MySQL (***em desenvolvimento***)
+- MySQL
 
 ### Demonstração 
 #### index.php (home)
-<img src="https://github.com/user-attachments/assets/b32426b7-3e0e-457b-9c04-58354eb13602" width="450"/>
+<img src="https://github.com/user-attachments/assets/80a43a5b-a925-4fca-982c-10d905ca86bb" width="450"/>
 
 
 #### blog.php (posts)
-<img src="https://github.com/user-attachments/assets/3f58388a-2855-4385-9e12-ed4dce4f2da5" width="450"/>
+<img src="https://github.com/user-attachments/assets/69fe68be-d1be-453a-821b-fba2a54ea2c8" width="450"/>
+
+### list.php (watchlist)
+<img src="https://github.com/user-attachments/assets/4ff10848-bdb8-4fd0-a385-039c172b9dfd" width="450"/>
 
 ### Para ver esse projeto live:
-## Obrigatório
-- XAMPP (download from [apachefriends.org](https://www.apachefriends.org/index.html))
-- Web browser
+## Requisitos
+
+- Servidor web (ex: Apache, Nginx)
+- PHP 7.0 ou superior
+- MySQL 5.7 ou superior
 
 ## Instalação
-1. **Download and Install XAMPP:**
-   - Visit the [official XAMPP website](https://www.apachefriends.org/index.html).
-   - Download the appropriate version for your operating system.
-   - Follow the installation instructions.
 
-2. **Clone the Repository:**
-   - Clone this repository to your local machine using the following command:
-   ```bash
-   git clone https://github.com/your-username/simple-php-project.git
+1. Clone este repositório para a sua máquina local:
+
+    ```sh
+    git clone https://github.com/seu-usuario/seu-projeto.git
+    ```
+
+2. Navegue até o diretório do projeto:
+
+    ```sh
+    cd seu-projeto
+    ```
+
+3. Importar a base de dados MySQL:
+
+    ```sh
+    mysql -u seu-usuario -p sua-database < database.sql
+    ```
+    
+5. Abra o projeto no navegador:
+
+    ```
+    http://localhost/seu-projeto
+    ```
+
