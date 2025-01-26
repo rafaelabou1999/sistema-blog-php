@@ -18,8 +18,9 @@ if(!empty($_SESSION['title'])){
     $count_value = (int) $results_count['count'];
     
     if($count_value === 0){
-        $stmt = $pdo->prepare('INSERT INTO movie (`title`) VALUES (:title)');
+        $stmt = $pdo->prepare('INSERT INTO movie (`image`,`title`) VALUES (:image, :title)');
         $stmt->bindValue(':title', $_SESSION['title']);
+        $stmt->bindValue(':image', $_SESSION['image']);
         $stmt->execute(); 
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     }   
@@ -51,11 +52,12 @@ session_destroy();
         <div class="movies" >
             <?php foreach ($rows AS $row):?>
                 <div class="each_movie" id="<?= e($row['id']) ?>">
+                    <img class="img_movie" width="100%" height="190px" src="<?= $row['image']?>" style="object-fit:cover;"/>
                     <h5><?= $row['title'] ?></h5>
                     <form id="delete-form" method="POST" action="../inc/db-delete-movie.inc.php" >
                        <input type="hidden" name="id" value="<?= e($row['id']) ?>"/>
                     </form>
-                    <button type="submit">Deletar</button>
+                    <button type="submit">Desfazer</button>
                 </div>   
             <?php endforeach; ?>
         </div>

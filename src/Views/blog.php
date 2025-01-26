@@ -32,6 +32,7 @@ foreach ($posts as $post) {
         switch ($_SESSION['title']) {
             case $post['title']:
                 include __DIR__ . "/../inc/Header.inc.php"; ?>
+                <?php $_SESSION['image'] = $post['image']?>
                 <div class="box">
              
                 <div class="has_title">
