@@ -1,9 +1,10 @@
 # Sistema de Blog 
 ### Linguagens e Ferramentas
-- HTML, CSS
-- JavaScript
 - PHP
 - MySQL
+- HTML, CSS
+- JavaScript
+
 
 ### Demonstração 
 #### index.php (home)
